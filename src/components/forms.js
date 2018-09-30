@@ -10,6 +10,7 @@ class Form extends React.Component {
         login={this.props.login}
         signup={this.props.signup}
         setUser={this.props.setUser}
+        setUserSchedule={this.props.setUserSchedule}
         history={this.props.history}
       />
     )
@@ -24,6 +25,7 @@ const mapDispatch = (dispatch) => {
     signup: dispatch.user.signup,
     login: dispatch.user.login,
     setUser: dispatch.user.setUserAccount,
+    setUserSchedule: dispatch.user.setUserSchedule,
   }
 }
 

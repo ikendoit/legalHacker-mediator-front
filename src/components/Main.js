@@ -1,21 +1,18 @@
 import React from 'react'
-import ReactDOM from 'react-dom';
 import { Button } from 'antd'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import HeaderBar from './HeaderBar'
 
 class Main extends React.Component<Props, States> {
 
   render(){
-    console.log('hello world')
     return ( 
       <div>
         <Button style={{
           textAlign: 'center',
           position: 'absolute',
           top: '40%',
-          left: '40%',
+          left: '38%',
           fontSize: 50,
           border: 'none'
         }}
@@ -26,9 +23,11 @@ class Main extends React.Component<Props, States> {
                 Do Questionaire
               </Link>
               <br />
-              <Link to="/checkQuestions" style={{}}>
-                Check All Questionaires
-              </Link>
+              { this.props.user.first_name === 'admin' &&
+                <Link to="/checkQuestions" style={{}}>
+                  Check All Questionaires
+                </Link>
+              }
             </div>
             : 
             <h4> Please Log In </h4>

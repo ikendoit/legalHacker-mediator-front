@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
-import { Icon } from 'antd';
 
 class Success extends React.Component<Props, States> {
   render() {

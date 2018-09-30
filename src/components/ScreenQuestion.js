@@ -19,8 +19,7 @@ class ScreenQuestion extends React.Component<Props, States>  {
     const {qIndex, section} = this.state
     const {questions} = this.props
     if (qIndex === 0 && section === 'preliminary') {
-      message.error('Sorry, can\'t go back')
-      this.props.history.push('/success')
+      this.props.history.push('/')
       return
     }
     if (section !== 'preliminary'){
@@ -46,6 +45,12 @@ class ScreenQuestion extends React.Component<Props, States>  {
     }
     if (section === 'preliminary'){
       if (qIndex === questions[section].length-1){
+        // check if preliminary is false
+        if (!this.validateValidPreliminary()) {
+          message.error('Cannot Mediate. Sorry, go to court')
+          this.props.history.push('/')
+          return
+        }
         this.setState({
           qIndex: 0,
           section: 'non-preliminary'
@@ -56,8 +61,7 @@ class ScreenQuestion extends React.Component<Props, States>  {
         })
       }
     } else {
-      const questionsString = JSON.stringify(questions).replace(/\'/g,"''");
-      console.log(questionsString)
+      const questionsString = JSON.stringify(questions).replace(/'/g,"''");
       try {
         fetch('http://localhost:8181/questions', {
           headers: {
@@ -101,6 +105,11 @@ class ScreenQuestion extends React.Component<Props, States>  {
     }
 
     return false
+  }
+
+  validateValidPreliminary = () => {
+    const {questions} = this.props
+    return questions.preliminary.every(record => record.answer === false)
   }
 
   answerQuestion = (index, section, answer) => {
@@ -213,7 +222,8 @@ class ScreenQuestion extends React.Component<Props, States>  {
         <h1 className="title" style={{
           textAlign: 'center',
           paddingTop: 150,
-          marginLeft: -60,
+          marginLeft: '-5%',
+          letterSpacing: 8,
           size: 25,
         }}> Screening Question </h1>
         <div style={{

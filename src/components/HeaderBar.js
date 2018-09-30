@@ -1,9 +1,6 @@
 import React from 'react'
-import ReactDOM from 'react-dom';
 import { 
   Button, 
-  Input,
-  Modal
 } from 'antd'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
@@ -17,15 +14,15 @@ class HeaderBar extends React.Component<Props, States> {
   }
 
   render(){
-    const paddingLeft = this.props.user ? '37%' : '40%'
-    const {user} = this.props
+    const {user, userSchedule} = this.props
     return ( 
       <div className="header" >
         { user ? 
           (
             <div>
               <span> Hello {user.first_name} </span>
-              <button onClick={this.onSignOut}> Sign out </button>
+              <Button onClick={this.onSignOut}> Sign out </Button>
+              <Button onClick={(e) => history.push('schedules')}> My Schedules, {userSchedule ? userSchedule.length: '--'}/{user.countScheds} un-set </Button>
             </div>
           ):
           (
@@ -38,17 +35,20 @@ class HeaderBar extends React.Component<Props, States> {
           <div style={{
             position: 'absolute',
             top: 20,
-            paddingLeft,
+            paddingLeft: '38%',
             fontSize: 60,
             color: 'lightcoral',
-          }}> Auto Mediator </div>
+            cursor: 'pointer'
+          }} 
+            onClick={e => history.push('/')}> Auto Mediator </div>
       </div>
     )
   }
 }
 
 const mapState = (state) => ({
-  user: state.user.userAccount
+  user: state.user.userAccount,
+  userSchedule: state.user.userSchedule,
 })
 
 const mapDispatch = (dispatch) => ({

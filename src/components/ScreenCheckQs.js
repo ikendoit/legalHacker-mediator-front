@@ -15,7 +15,7 @@ class ScreenQs extends React.Component<Props, States> {
       render: (text, record) => {
         // use moment.js to care for timezone in the future
         return (
-          <p> {text.replace('Z',' ').replace('T',' ')}</p>
+          <span> {text !== null && text.replace('Z',' ').replace('T',' ')}</span>
         )
       }
     }, {
@@ -32,7 +32,7 @@ class ScreenQs extends React.Component<Props, States> {
       key: 'allow',
       render: (text,record) => {
         return (
-          <span> {text.toString()} </span>
+          <span> {text !== null && text.toString()} </span>
         )
       }
     }, {
@@ -117,7 +117,6 @@ class ScreenQs extends React.Component<Props, States> {
   }
 
   render() {
-    const {questions} = this.props
     const {data} = this.state
     if (!data) return <h1 style={{textAlign: 'center', paddingTop: 200}}> loading... </h1>
     return (
@@ -131,7 +130,6 @@ class ScreenQs extends React.Component<Props, States> {
 }
 
 const mapState = state => ({
-  questions: state.questions
 })
 
 export default connect(mapState,null)(ScreenQs)
