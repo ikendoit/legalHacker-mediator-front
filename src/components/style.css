@@ -1,0 +1,7 @@
+.title {
+  text-align: center;
+}
+
+.tickBox:hover {
+  background-color: lightgray
+}

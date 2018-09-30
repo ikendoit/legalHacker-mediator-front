@@ -1,0 +1,560 @@
+{
+  "hasThey": [
+    {
+      "content": "Hit you without a weapon (punching, kicking, etc?)",
+      "answer": null
+    },
+    {
+      "content": "Hit you with a weapon",
+      "answer": null
+    },
+    {
+      "content": "Restrained you physically",
+      "answer": null
+    },
+    {
+      "content": "Restrained you environmentally (locked in/out of a room, denied you access, blocked exit)",
+      "answer": null
+    },
+    {
+      "content": "Forced you into sexual activity",
+      "answer": null
+    },
+    {
+      "content": "Threatened you with physical harm",
+      "answer": null
+    },
+    {
+      "content": "Threatened your family with physical harm",
+      "answer": null
+    },
+    {
+      "content": "carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threatened you with emotional harm",
+      "answer": null
+    },
+    {
+      "content": "Threatened your family with emotional harm",
+      "answer": null
+    },
+    {
+      "content": "Did they carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threatened your finances",
+      "answer": null
+    },
+    {
+      "content": "Threatened your famiy's finances",
+      "answer": null
+    },
+    {
+      "content": "Did they carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threatened a family member with sexual harm",
+      "answer": null
+    },
+    {
+      "content": "Did they carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threatened your property",
+      "answer": null
+    },
+    {
+      "content": "Threatened your family's property",
+      "answer": null
+    },
+    {
+      "content": "Did they carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threaten you with social harm",
+      "answer": null
+    },
+    {
+      "content": "Threaten your family with social harm",
+      "answer": null
+    },
+    {
+      "content": "Did they carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Asked to go through your personal informaton (texts, emails, etc.)",
+      "answer": null
+    },
+    {
+      "content": "Gone through your private information without your permission",
+      "answer": null
+    },
+    {
+      "content": "Used spyware or tracking software",
+      "answer": null
+    },
+    {
+      "content": "Followed you, had you followed",
+      "answer": null
+    },
+    {
+      "content": "Restricted access to friends",
+      "answer": null
+    },
+    {
+      "content": "Monitored phone calls",
+      "answer": null
+    },
+    {
+      "content": "Restricted your spending",
+      "answer": null
+    },
+    {
+      "content": "Restricted your access to friends/family",
+      "answer": null
+    },
+    {
+      "content": "Asked you to move",
+      "answer": null
+    },
+    {
+      "content": "Forced you to move",
+      "answer": null
+    },
+    {
+      "content": "Done things where people questioned your safety",
+      "answer": null
+    },
+    {
+      "content": "Done things where people questioned that person's mental/emotional stability",
+      "answer": null
+    },
+    {
+      "content": "Done things you've had to apologize for",
+      "answer": null
+    },
+    {
+      "content": "Done things you've had to explain",
+      "answer": null
+    }
+  ],
+  "threat": [
+    {
+      "content": "Hit you without a weapon (punching, kicking, etc?)",
+      "answer": null
+    },
+    {
+      "content": "Hit you with a weapon",
+      "answer": null
+    },
+    {
+      "content": "Restrained you physically",
+      "answer": null
+    },
+    {
+      "content": "Restrained you environmentally (locked in/out of a room, denied you access, blocked exit)",
+      "answer": null
+    },
+    {
+      "content": "Forced you into sexual activity",
+      "answer": null
+    },
+    {
+      "content": "Threatened you with physical harm",
+      "answer": null
+    },
+    {
+      "content": "Threatened your family with physical harm",
+      "answer": null
+    },
+    {
+      "content": "carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threatened you with emotional harm",
+      "answer": null
+    },
+    {
+      "content": "Threatened your family with emotional harm",
+      "answer": null
+    },
+    {
+      "content": "Did they carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threatened your finances",
+      "answer": null
+    },
+    {
+      "content": "Threatened your famiy's finances",
+      "answer": null
+    },
+    {
+      "content": "Did they carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threatened a family member with sexual harm",
+      "answer": null
+    },
+    {
+      "content": "Did they carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threatened your property",
+      "answer": null
+    },
+    {
+      "content": "Threatened your family's property",
+      "answer": null
+    },
+    {
+      "content": "Did they carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threaten you with social harm",
+      "answer": null
+    },
+    {
+      "content": "Threaten your family with social harm",
+      "answer": null
+    },
+    {
+      "content": "Did they carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Asked to go through your personal informaton (texts, emails, etc.)",
+      "answer": null
+    },
+    {
+      "content": "Gone through your private information without your permission",
+      "answer": null
+    },
+    {
+      "content": "Used spyware or tracking software",
+      "answer": null
+    },
+    {
+      "content": "Followed you, had you followed",
+      "answer": null
+    },
+    {
+      "content": "Restricted access to friends",
+      "answer": null
+    },
+    {
+      "content": "Monitored phone calls",
+      "answer": null
+    },
+    {
+      "content": "Restricted your spending",
+      "answer": null
+    },
+    {
+      "content": "Restricted your access to friends/family",
+      "answer": null
+    },
+    {
+      "content": "Asked you to move",
+      "answer": null
+    },
+    {
+      "content": "Forced you to move",
+      "answer": null
+    },
+    {
+      "content": "Done things where people questioned your safety",
+      "answer": null
+    },
+    {
+      "content": "Done things where people questioned that person's mental/emotional stability",
+      "answer": null
+    },
+    {
+      "content": "Done things you've had to apologize for",
+      "answer": null
+    },
+    {
+      "content": "Done things you've had to explain",
+      "answer": null
+    }
+  ],
+  "doesThey": [
+    {
+      "content": "Hit you without a weapon (punching, kicking, etc?)",
+      "answer": null
+    },
+    {
+      "content": "Hit you with a weapon",
+      "answer": null
+    },
+    {
+      "content": "Restrained you physically",
+      "answer": null
+    },
+    {
+      "content": "Restrained you environmentally (locked in/out of a room, denied you access, blocked exit)",
+      "answer": null
+    },
+    {
+      "content": "Forced you into sexual activity",
+      "answer": null
+    },
+    {
+      "content": "Threatened you with physical harm",
+      "answer": null
+    },
+    {
+      "content": "Threatened your family with physical harm",
+      "answer": null
+    },
+    {
+      "content": "carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threatened you with emotional harm",
+      "answer": null
+    },
+    {
+      "content": "Threatened your family with emotional harm",
+      "answer": null
+    },
+    {
+      "content": "Did they carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threatened your finances",
+      "answer": null
+    },
+    {
+      "content": "Threatened your famiy's finances",
+      "answer": null
+    },
+    {
+      "content": "Did they carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threatened a family member with sexual harm",
+      "answer": null
+    },
+    {
+      "content": "Did they carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threatened your property",
+      "answer": null
+    },
+    {
+      "content": "Threatened your family's property",
+      "answer": null
+    },
+    {
+      "content": "Did they carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threaten you with social harm",
+      "answer": null
+    },
+    {
+      "content": "Threaten your family with social harm",
+      "answer": null
+    },
+    {
+      "content": "Did they carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Asked to go through your personal informaton (texts, emails, etc.)",
+      "answer": null
+    },
+    {
+      "content": "Gone through your private information without your permission",
+      "answer": null
+    },
+    {
+      "content": "Used spyware or tracking software",
+      "answer": null
+    },
+    {
+      "content": "Followed you, had you followed",
+      "answer": null
+    },
+    {
+      "content": "Restricted access to friends",
+      "answer": null
+    },
+    {
+      "content": "Monitored phone calls",
+      "answer": null
+    },
+    {
+      "content": "Restricted your spending",
+      "answer": null
+    },
+    {
+      "content": "Restricted your access to friends/family",
+      "answer": null
+    },
+    {
+      "content": "Asked you to move",
+      "answer": null
+    },
+    {
+      "content": "Forced you to move",
+      "answer": null
+    },
+    {
+      "content": "Done things where people questioned your safety",
+      "answer": null
+    },
+    {
+      "content": "Done things where people questioned that person's mental/emotional stability",
+      "answer": null
+    },
+    {
+      "content": "Done things you've had to apologize for",
+      "answer": null
+    },
+    {
+      "content": "Done things you've had to explain",
+      "answer": null
+    },
+    {
+      "answer": null
+    },
+    {
+      "answer": null
+    }
+  ],
+  "charged": [
+    {
+      "content": "Hit you without a weapon (punching, kicking, etc?)",
+      "answer": null
+    },
+    {
+      "content": "Hit you with a weapon",
+      "answer": null
+    },
+    {
+      "content": "Restrained you physically",
+      "answer": null
+    },
+    {
+      "content": "Restrained you environmentally (locked in/out of a room, denied you access, blocked exit)",
+      "answer": null
+    },
+    {
+      "content": "Forced you into sexual activity",
+      "answer": null
+    },
+    {
+      "content": "Threatened you with physical harm",
+      "answer": null
+    },
+    {
+      "content": "Threatened your family with physical harm",
+      "answer": null
+    },
+    {
+      "content": "carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threatened you with emotional harm",
+      "answer": null
+    },
+    {
+      "content": "Threatened your family with emotional harm",
+      "answer": null
+    },
+    {
+      "content": "Did they carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threatened your finances",
+      "answer": null
+    },
+    {
+      "content": "Threatened your famiy's finances",
+      "answer": null
+    },
+    {
+      "content": "Did they carry out the threat",
+      "answer": null
+    }
+  ],
+  "history": [
+    {
+      "content": "Hit you without a weapon (punching, kicking, etc?)",
+      "answer": null
+    },
+    {
+      "content": "Hit you with a weapon",
+      "answer": null
+    },
+    {
+      "content": "Restrained you physically",
+      "answer": null
+    },
+    {
+      "content": "Restrained you environmentally (locked in/out of a room, denied you access, blocked exit)",
+      "answer": null
+    },
+    {
+      "content": "Forced you into sexual activity",
+      "answer": null
+    },
+    {
+      "content": "Threatened you with physical harm",
+      "answer": null
+    },
+    {
+      "content": "Threatened your family with physical harm",
+      "answer": null
+    },
+    {
+      "content": "carry out the threat",
+      "answer": null
+    },
+    {
+      "content": "Threatened you with emotional harm",
+      "answer": null
+    },
+    {
+      "content": "Threatened your family with emotional harm",
+      "answer": null
+    }
+  ],
+  "harm": [
+    {
+      "content": "Hit you without a weapon (punching, kicking, etc?)",
+      "answer": null
+    },
+    {
+      "content": "Restrained you physically",
+      "answer": null
+    },
+    {
+      "content": "Threatened you with physical harm",
+      "answer": null
+    }
+  ]
+}
