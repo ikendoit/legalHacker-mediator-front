@@ -53,7 +53,7 @@ class Schedule extends React.Component<Props, States> {
       render: (text, record) => {
         return (
           <span> 
-            <a onClick={(e) => this.setSchedule(record)}> Set my schedule </a>
+            <a disabled={record.allow !== true} onClick={(e) => this.setSchedule(record)}> Set my schedule </a>
           </span>
         )
       }
@@ -77,10 +77,6 @@ class Schedule extends React.Component<Props, States> {
       ),
       onOk: async () => {
         const {note, date} = this.state
-        if (record.allow !== true){
-          message.error('Sorry, you have to wait for manual approval. Check your email')
-          return
-        }
         await fetch(`http://localhost:8181/schedule/${record.id}`, {
           headers: {
             'Accept': 'application/json',
