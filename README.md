@@ -1,5 +1,7 @@
 ####Auto Mediator: 
 
+  First, let's procratinate: https://www.youtube.com/watch?v=X5QFOCnEVFs&feature=youtu.be
+
   Screening Questions for clients to quickly know if their cases can be mediated. If yes, they can set up schedules and meet up with the mediator.
 
   Has Admin Tools for mediators to monitor screening questionaires and feed backs.
