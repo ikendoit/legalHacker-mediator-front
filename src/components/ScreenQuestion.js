@@ -15,25 +15,6 @@ class ScreenQuestion extends React.Component<Props, States>  {
     qIndex: 0,
   } 
 
-  menuGoBack = () => {
-    const {qIndex, section} = this.state
-    const {questions} = this.props
-    if (qIndex === 0 && section === 'preliminary') {
-      this.props.history.push('/')
-      return
-    }
-    if (section !== 'preliminary'){
-      this.setState({
-        section: 'preliminary', 
-        qIndex: questions['preliminary'].length-1,
-      })
-    } else {
-      this.setState({
-        qIndex: this.state.qIndex-1,
-      }) 
-    }
-  }
-
   menuGoForward = async () => {
     // check if next section/indexed record is filled 
     const allowed = this.validateFilled()
@@ -44,13 +25,13 @@ class ScreenQuestion extends React.Component<Props, States>  {
       return
     }
     if (section === 'preliminary'){
+      // check if preliminary is false
+      if (!this.validateValidPreliminary()) {
+        message.error('Cannot Mediate. Sorry, go to court')
+        this.props.history.push('/unmediatable')
+        return
+      }
       if (qIndex === questions[section].length-1){
-        // check if preliminary is false
-        if (!this.validateValidPreliminary()) {
-          message.error('Cannot Mediate. Sorry, go to court')
-          this.props.history.push('/')
-          return
-        }
         this.setState({
           qIndex: 0,
           section: 'non-preliminary'
@@ -131,7 +112,6 @@ class ScreenQuestion extends React.Component<Props, States>  {
     const {qIndex, section} = this.state
     const {questions} = this.props
     const question = questions[section][qIndex]
-    console.log(question)
     if (!question) return (<h1> error, blame Ken </h1>)
     return (
       <div 
@@ -232,16 +212,6 @@ class ScreenQuestion extends React.Component<Props, States>  {
           textAlign: 'center'
         }}>
           { prel ? this.renderQuestion() : this.renderTickBox()}
-        </div>
-        <div style={{
-          position: 'fixed',
-          top: '50%',
-          left:0,
-          fontSize: 50,
-        }}
-          onClick={this.menuGoBack}
-        >
-          ◀ 
         </div>
         <div style={{
           position: 'fixed',

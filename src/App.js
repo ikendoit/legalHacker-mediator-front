@@ -7,7 +7,10 @@ import HeaderBar from './components/HeaderBar'
 import ScreenSchedule from './components/ScreenSchedule'
 import ScreenQuestion from './components/ScreenQuestion'
 import ScreenSuccess from './components/ScreenSuccess'
+import ScreenFailure from './components/ScreenFailure'
 import ScreenCheckQs from './components/ScreenCheckQs'
+import ScreenContact from './components/ScreenContact'
+import ScreenFeedBack from './components/ScreenFeedBack'
 import Forms from './components/forms'
 import history from './history'
 
@@ -16,8 +19,6 @@ import {
   Route, 
   Switch,
 } from 'react-router-dom'
-
-
 
 class App extends Component {
   render() {
@@ -33,7 +34,10 @@ class App extends Component {
                 <Route exact path='/questions' component={ScreenQuestion}/>
                 <Route exact path='/account' component={Forms}/>
                 <Route exact path='/checkQuestions' component={ScreenCheckQs}/>
+                <Route exact path='/contact' component={ScreenContact}/>
+                <Route exact path='/feedbacks' component={ScreenFeedBack}/>
                 <Route exact path='/success' component={ScreenSuccess}/>
+                <Route exact path='/unmediatable' component={ScreenFailure}/>
 
                 <Route path='/' component={Main}/>
               </Switch>
